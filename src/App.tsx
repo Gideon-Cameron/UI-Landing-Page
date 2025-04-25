@@ -5,69 +5,64 @@ import Ferniro from "./assets/Ferniro.png";
 
 export default function App() {
   return (
-    <main className="flex flex-col md:flex-row items-center justify-between min-h-screen bg-background text-white px-8 md:px-12 gap-y-8">
-      {/* Left Content Section */}
-      <div className="flex flex-col justify-center w-full md:w-2/5 pl-4 md:pl-8 space-y-6">
-        {/* Title */}
-        <h1 className="font-extrabold text-[80px] leading-tight tracking-normal text-gold font-poppins">
+    <main className="flex flex-col md:flex-row items-center justify-between min-h-screen bg-background text-white px-6 md:px-12 gap-10">
+      {/* Left Content */}
+      <section className="flex flex-col justify-center w-full md:w-2/5 space-y-6 text-center md:text-left">
+        <h1 className="text-[48px] md:text-[72px] font-extrabold leading-tight text-gold font-poppins">
           FURNITURE
         </h1>
-        {/* Subtitle */}
-        <p className="font-medium text-[38px] leading-tight tracking-normal text-gold font-poppins">
+        <p className="text-[28px] md:text-[36px] font-semibold text-gold font-poppins">
           Landing Page
         </p>
-        {/* Description */}
-        <p className="text-black text-lg md:text-xl leading-relaxed max-w-lg">
+        <p className="text-black text-base md:text-lg leading-relaxed max-w-lg mx-auto md:mx-0">
           The e-Commerce Website design template is easy to customize,
-          making it even easier for you to design your next website or 
+          making it even easier for you to design your next website or
           project, and speed up your design workflow.
         </p>
 
-        {/* Links Section (Smaller Text & Icons) */}
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-3 items-center md:items-start">
           <a
             href="https://uiuxexperts.github.io/portfolio/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center space-x-2"
+            className="flex items-center gap-3"
           >
-            <img src={iconWww} alt="Website Icon" className="w-7 h-7 md:w-9 md:h-9" />
-            <span className="text-black text-xs md:text-sm font-medium">
-              https://uiuxexperts.github.io/portfolio/
+            <img src={iconWww} alt="Website Icon" className="w-6 h-6 md:w-7 md:h-7" />
+            <span className="text-black text-sm md:text-base font-medium">
+              uiuxexperts.github.io/portfolio/
             </span>
           </a>
-
           <a
             href="https://dribbble.com/aashifasheikh12"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center space-x-2"
+            className="flex items-center gap-3"
           >
-            <img src={iconGlobe} alt="Website Icon" className="w-7 h-7 md:w-9 md:h-9" />
-            <span className="text-black text-xs md:text-sm font-medium">
-              aashifasheikh12
+            <img src={iconGlobe} alt="Dribbble Icon" className="w-6 h-6 md:w-7 md:h-7" />
+            <span className="text-black text-sm md:text-base font-medium">
+              dribbble.com/aashifasheikh12
             </span>
           </a>
-
           <a
             href="#"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center space-x-2"
+            className="flex items-center gap-3"
           >
-            <img src={iconBe} alt="Website Icon" className="w-7 h-7 md:w-9 md:h-9" />
-            <span className="text-black text-xs md:text-sm font-medium">
-              /aashifasheikh12
+            <img src={iconBe} alt="Behance Icon" className="w-6 h-6 md:w-7 md:h-7" />
+            <span className="text-black text-sm md:text-base font-medium">
+              behance.net/aashifasheikh12
             </span>
           </a>
         </div>
-      </div>
+      </section>
 
-      {/* Right Image Section (Full-Screen Fix) */}
-      <div className="relative w-full md:w-3/5 h-[60vh] md:h-screen overflow-hidden">
-        <img 
-          src={Ferniro} 
-          alt="Furniture Image" 
+      {/* Right Image Section */}
+      <div className="relative w-full md:w-3/5 h-[40vh] sm:h-[50vh] md:h-screen overflow-hidden rounded-lg shadow-md">
+        <img
+          src={Ferniro}
+          alt="Modern furniture showcase"
+          loading="lazy"
           className="absolute inset-0 h-full w-full object-cover"
         />
       </div>
