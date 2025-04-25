@@ -7,7 +7,7 @@ export default function App() {
   return (
     <main className="flex flex-col md:flex-row items-center justify-between min-h-screen bg-background text-white px-6 md:px-12 gap-10">
       {/* Left Content */}
-      <section className="flex flex-col justify-center w-full md:w-2/5 space-y-6 text-center md:text-left">
+      <section className="flex flex-col justify-center w-full md:w-2/5 space-y-6 text-center md:text-left mb-10 md:mb-0">
         <h1 className="text-[48px] md:text-[72px] font-extrabold leading-tight text-gold font-poppins">
           FURNITURE
         </h1>
