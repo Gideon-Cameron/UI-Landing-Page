@@ -1,54 +1,43 @@
-# React + TypeScript + Vite
+# 🛋️ UI Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+A modern and elegant furniture landing page built with **React**, **TypeScript**, and **Tailwind CSS**.  
+Responsive, accessible, and performance-optimized – ideal for showcasing product-based brands or eCommerce UI kits.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**🔗 Live Preview**: [https://ui-landin-page.netlify.app](https://ui-landin-page.netlify.app)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✨ Features
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- ⚡ Lightning-fast performance (Vite + lazy-loaded assets)
+- 💻 Responsive layout for mobile, tablet, and desktop
+- 🎨 Styled with Tailwind CSS for rapid UI development
+- 🖼️ Hero image with smooth scaling and shadow effects
+- 🔗 Social and portfolio links
+- ♿ Accessible markup and semantic HTML
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📦 Built With
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+| Tech            | Usage                    |
+|-----------------|--------------------------|
+| React + Vite    | Frontend framework & build tool |
+| TypeScript      | Static typing             |
+| Tailwind CSS    | Utility-first styling     |
+| Netlify         | Deployment                |
+
+---
+
+## 🔧 Getting Started
+
+```bash
+# Clone the repo
+git clone https://github.com/Gideon-Cameron/UI-Landing-Page.git
+
+# Install dependencies
+npm install
+
+# Run locally
+npm run dev
