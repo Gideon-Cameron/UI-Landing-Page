@@ -11,13 +11,16 @@ export default function App() {
         <h1 className="text-[48px] md:text-[72px] font-extrabold leading-tight text-gold font-poppins">
           FURNITURE
         </h1>
+
         <p className="text-[28px] md:text-[36px] font-semibold text-gold font-poppins">
-          Landing Page
+          Crafted for Modern Living
         </p>
+
         <p className="text-black text-base md:text-lg leading-relaxed max-w-lg mx-auto md:mx-0">
-          The e-Commerce Website design template is easy to customize,
-          making it even easier for you to design your next website or
-          project, and speed up your design workflow.
+          Discover thoughtfully designed furniture that blends comfort,
+          functionality, and timeless aesthetics. Built for modern homes,
+          our collections focus on quality materials, clean lines, and
+          everyday usability.
         </p>
 
         <div className="flex flex-col gap-3 items-center md:items-start">
@@ -29,9 +32,10 @@ export default function App() {
           >
             <img src={iconWww} alt="Website Icon" className="w-6 h-6 md:w-7 md:h-7" />
             <span className="text-black text-sm md:text-base font-medium">
-              uiuxexperts.github.io/portfolio/
+              uiuxexperts.github.io/portfolio
             </span>
           </a>
+
           <a
             href="https://dribbble.com/aashifasheikh12"
             target="_blank"
@@ -43,6 +47,7 @@ export default function App() {
               dribbble.com/aashifasheikh12
             </span>
           </a>
+
           <a
             href="#"
             target="_blank"
@@ -58,10 +63,21 @@ export default function App() {
       </section>
 
       {/* Right Image Section */}
-      <div className="relative w-full md:w-3/5 h-[40vh] sm:h-[50vh] md:h-screen overflow-hidden rounded-lg shadow-md">
+      <div
+        className="
+          relative
+          w-full
+          md:w-3/5
+          h-[clamp(45vh,55vw,65vh)]
+          md:h-screen
+          overflow-hidden
+          rounded-lg
+          shadow-md
+        "
+      >
         <img
           src={Ferniro}
-          alt="Modern furniture showcase"
+          alt="Modern furniture collection in a contemporary interior"
           loading="lazy"
           className="absolute inset-0 h-full w-full object-cover"
         />
